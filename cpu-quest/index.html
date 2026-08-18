@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CPU Quest · 从沙子到程序</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="hud">
+  <div class="hud-left">
+    <div class="logo" title="回到地图">⚡ CPU&nbsp;QUEST</div>
+    <div class="rank">
+      <span id="rank-icon">🥚</span>
+      <div class="rank-txt">
+        <div id="rank-name">电子学徒</div>
+        <div id="rank-lv">Lv.1</div>
+      </div>
+    </div>
+  </div>
+  <div class="hud-mid">
+    <div class="xp-row">
+      <span id="xp-label">0 / 100 XP</span>
+      <span id="xp-next">下一级：见习焊工</span>
+    </div>
+    <div class="xp-bar"><div id="xp-fill"></div></div>
+  </div>
+  <div class="hud-right">
+    <div class="stat" title="已通关卡数"><b id="stat-done">0</b><span>关卡</span></div>
+    <div class="stat" title="获得徽章"><b id="stat-badge">0</b><span>徽章</span></div>
+    <button id="btn-map" class="ghost">🗺️ 地图</button>
+  </div>
+</div>
+
+<main id="view"></main>
+
+<div id="toast-wrap"></div>
+<div id="fx"></div>
+
+<div id="levelup" class="modal hidden">
+  <div class="modal-card">
+    <div class="lu-icon">🎉</div>
+    <h2>升级了！</h2>
+    <div class="lu-rank"><span id="lu-icon">🥚</span> <b id="lu-name"></b></div>
+    <p id="lu-desc"></p>
+    <button id="lu-close" class="primary">继续冒险 →</button>
+  </div>
+</div>
+
+<script src="js/state.js"></script>
+<script src="js/labs.js"></script>
+<script src="js/content-a.js"></script>
+<script src="js/content-b.js"></script>
+<script src="js/content-c.js"></script>
+<script src="js/content-d.js"></script>
+<script src="js/content-e.js"></script>
+<script src="js/content-f.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
